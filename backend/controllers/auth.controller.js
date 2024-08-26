@@ -1,3 +1,4 @@
+import bcrypt from "bcryptjs";
 import User from "../models/user.model.js";
 
 export const signup = async (req, res) => {
@@ -14,7 +15,9 @@ export const signup = async (req, res) => {
       return res.status(400).json({ error: "Username must be unique" });
     }
 
-    // HASH PASSWORD HERE
+    // HASH PASSWORD
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
 
     // Profile Avatars
     const boyProfilePic = `https://avatar.iran.liara.run/public/boy?username=${username}`;
@@ -23,7 +26,7 @@ export const signup = async (req, res) => {
     const newUser = new User({
       fullName,
       username,
-      password,
+      password: hashedPassword,
       gender,
       profilePic: gender === "male" ? boyProfilePic : girlProfilePic,
     });
