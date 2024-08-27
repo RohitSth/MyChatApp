@@ -6,7 +6,7 @@ const SearchInput = () => {
       <input
         type="text"
         placeholder="Search..."
-        className="w-full input input-sm bg-white/20 border border-transparent placeholder:text-gray-200 focus:border-white/30 rounded-full"
+        className="w-full input input-sm bg-white/20 border border-transparent placeholder:text-gray-200 focus:border-white/30 rounded-full text-white"
       />
       <button
         type="submit"

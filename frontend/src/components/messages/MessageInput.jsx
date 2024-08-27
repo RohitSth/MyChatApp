@@ -7,7 +7,7 @@ const MessageInput = () => {
         <input
           type="text"
           placeholder="Type a message"
-          className="w-full input input-sm bg-white/20 border border-white/20 placeholder:text-gray-200 focus:border-white/30 rounded-full"
+          className="w-full input input-sm text-white bg-white/20 border border-white/20 placeholder:text-gray-200 focus:border-white/30 rounded-full"
         />
         <button
           type="submit"
