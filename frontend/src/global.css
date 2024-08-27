@@ -10,24 +10,22 @@ body{
     background-attachment: fixed;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 6px;
+/* Custom scrollbar styles */
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
   }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: none;
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+      background: none;
   }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #ffffff2e;
-    border-radius: 5px;
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #ffffff2e;
+      border-radius: 5px;
   }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #c3b5fd58;
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #c3b5fd58;
   }
-  
+}
