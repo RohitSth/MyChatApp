@@ -28,13 +28,13 @@ const Login = () => {
 
           <a
             href="#"
-            className="text-xs hover:underline flex justify-end hover:text-blue-500 mt-2"
+            className="text-xs hover:underline flex justify-end hover:text-sky-400 mt-2"
           >
             Create an account?
           </a>
 
           <div>
-            <button className="btn btn-block rounded-md btn-sm mt-2 bg-white/60 border border-white/20 text-blue-600 font-semibold hover:bg-black">
+            <button className="btn btn-block rounded-md btn-sm mt-2 bg-white/60 border border-white/20 text-black font-semibold hover:bg-black hover:text-white">
               LOGIN
             </button>
           </div>
