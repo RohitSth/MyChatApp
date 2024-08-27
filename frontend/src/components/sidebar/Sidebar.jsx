@@ -4,8 +4,8 @@ import SearchInput from "./SearchInput";
 
 const Sidebar = () => {
   return (
-    <div className="p-3 flex">
-      <div className="h-full p-2 flex flex-col ">
+    <div className="p-3 flex size-full">
+      <div className="size-full p-2 flex flex-col ">
         <SearchInput />
         <div className="rounded-xl my-4 h-full overflow-hidden bg-transparent bg-clip-padding backdrop-filter backdrop-blur-lg">
           <Conversations />

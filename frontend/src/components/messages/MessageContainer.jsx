@@ -6,8 +6,8 @@ import { AiOutlineMessage } from "react-icons/ai";
 const MessageContainer = () => {
   const noChatSelected = false;
   return (
-    <div className="py-5 pr-5 flex">
-      <div className="h-full p-2 flex flex-col rounded-2xl overflow-hidden bg-transparent bg-clip-padding backdrop-filter backdrop-blur-lg md:min-w-[450px]">
+    <div className="py-5 md:pt-5 md:pb-5 px-5 md:pl-0 md:pr-5 flex w-full  h-full">
+      <div className="size-full p-2 flex flex-col rounded-2xl overflow-hidden bg-transparent bg-clip-padding backdrop-filter backdrop-blur-lg">
         {noChatSelected ? (
           <NoChatSelected />
         ) : (
@@ -28,7 +28,7 @@ export default MessageContainer;
 
 const NoChatSelected = () => {
   return (
-    <div className="relative flex h-full items-center justify-center">
+    <div className="relative flex size-full items-center justify-center">
       <div className="avatar absolute top-1 right-1 items-center">
         <div className="ring-white/40 w-8 rounded-full ring-1">
           <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
