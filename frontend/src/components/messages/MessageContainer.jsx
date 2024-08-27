@@ -4,9 +4,9 @@ import Messages from "./Messages";
 import { AiOutlineMessage } from "react-icons/ai";
 
 const MessageContainer = () => {
-  const noChatSelected = true;
+  const noChatSelected = false;
   return (
-    <div className="py-5 px-5 md:pl-0 md:pr-5 flex w-full md:w-[70%]">
+    <div className="py-5 md:pt-5 md:pb-5 px-5 md:pl-0 md:pr-5 flex w-full  h-full">
       <div className="size-full p-2 flex flex-col rounded-2xl overflow-hidden bg-transparent bg-clip-padding backdrop-filter backdrop-blur-lg">
         {noChatSelected ? (
           <NoChatSelected />
