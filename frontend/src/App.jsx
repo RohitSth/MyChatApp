@@ -1,12 +1,13 @@
 import "./App.css";
+import Login from "./pages/login/login";
 
 function App() {
   return (
     <>
-      <button className="btn btn-outline">Default</button>
-      <button className="btn btn-outline btn-primary">Primary</button>
-      <button className="btn btn-outline btn-secondary">Secondary</button>
-      <button className="btn btn-outline btn-accent">Accent</button>
+      <div className="relative p-4 h-screen flex items-center justify-center">
+        <h1 className="absolute top-4 left-4 font-bold text-xl">HICHAT</h1>
+        <Login />
+      </div>
     </>
   );
 }
