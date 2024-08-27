@@ -5,7 +5,7 @@ import { IoChatbubbles } from "react-icons/io5";
 import { FaUserFriends } from "react-icons/fa";
 
 const Home = () => {
-  const [activeTab, setActiveTab] = useState("messages");
+  const [activeTab, setActiveTab] = useState("sidebar");
 
   return (
     <>
