@@ -63,7 +63,7 @@ const SignUp = () => {
           <GenderCheckBox />
 
           <a
-            href="#"
+            href="/login"
             className="text-xs hover:underline flex justify-end hover:text-sky-400 mt-2"
           >
             Already have an account?

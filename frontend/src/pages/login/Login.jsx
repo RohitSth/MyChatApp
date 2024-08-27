@@ -27,7 +27,7 @@ const Login = () => {
           </div>
 
           <a
-            href="#"
+            href="/signup"
             className="text-xs hover:underline flex justify-end hover:text-sky-400 mt-2"
           >
             Create an account?
