@@ -4,7 +4,7 @@ import Conversation from "./Conversation";
 const Conversations = () => {
   const { loading, conversations } = useGetConversations();
   return (
-    <div className="p-2 flex flex-col h-full overflow-auto gap-y-1">
+    <div className="p-2 flex flex-col h-full overflow-auto gap-y-1 custom-scrollbar">
       {conversations.map((conversation, idx) => (
         <Conversation
           key={conversation._id}
