@@ -13,6 +13,8 @@ const Message = ({ message }) => {
     : selectedConversation?.profilePic;
   const bubbleColor = fromMe ? "bg-blue-500" : "bg-gray-200";
 
+  const nudgeClass = message.shouldNudge ? "nudge" : "";
+
   const formatedTime = extractTime(message.createdAt);
 
   return (
@@ -23,7 +25,9 @@ const Message = ({ message }) => {
             <img alt="ProfilePic" src={profilePic} />
           </div>
         </div>
-        <div className={`chat-bubble ${bubbleColor} text-black text-sm p-2`}>
+        <div
+          className={`chat-bubble ${bubbleColor} ${nudgeClass} text-black text-sm p-2`}
+        >
           {message.message}
         </div>
         <div className="chat-footer opacity-50 text-xs">
