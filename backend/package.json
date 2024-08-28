@@ -4,9 +4,9 @@
   "description": "��#\u0000 \u0000M\u0000y\u0000C\u0000h\u0000a\u0000t\u0000A\u0000p\u0000p\u0000\r\u0000 \u0000",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon backend/server.js",
-    "start": "node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "server": "nodemon server.js",
+    "start": "node server.js",
+    "build": "npm install"
   },
   "type": "module",
   "keywords": [],
