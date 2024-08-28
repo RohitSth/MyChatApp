@@ -25,7 +25,14 @@ function App() {
             element={authUser ? <Navigate to="/" /> : <SignUp />}
           />
         </Routes>
-        <Toaster />
+        <Toaster
+          toastOptions={{
+            style: {
+              background: "black",
+              color: "#fff",
+            },
+          }}
+        />
       </div>
     </>
   );
