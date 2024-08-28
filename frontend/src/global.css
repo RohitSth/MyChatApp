@@ -12,20 +12,9 @@ body{
 
 /* Custom scrollbar styles */
 @layer utilities {
-  .custom-scrollbar::-webkit-scrollbar {
-      width: 6px;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-track {
-      background: none;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-      background: #ffffff2e;
-      border-radius: 5px;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-      background: #c3b5fd58;
-  }
+    .custom-scrollbar {
+        scrollbar-width: thin;
+        scrollbar-color: #0000007e #00000000;
+        scroll-behavior: smooth;
+    }
 }

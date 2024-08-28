@@ -1,18 +1,26 @@
+import { useEffect } from "react";
+import useConversation from "../../zustand/useConversation";
 import MessageHeader from "./MessageHeader";
 import MessageInput from "./MessageInput";
 import Messages from "./Messages";
 import { AiOutlineMessage } from "react-icons/ai";
 
 const MessageContainer = () => {
-  const noChatSelected = false;
+  const { selectedConversation, setSelectedConversation } = useConversation();
+
+  useEffect(() => {
+    // Cleanup function (unmount)
+    return () => setSelectedConversation(null);
+  }, [setSelectedConversation]);
+
   return (
     <div className="py-5 md:pt-5 md:pb-5 px-5 md:pl-0 md:pr-5 flex w-full  h-full">
       <div className="size-full p-2 flex flex-col rounded-2xl overflow-hidden bg-transparent bg-clip-padding backdrop-filter backdrop-blur-lg">
-        {noChatSelected ? (
+        {!selectedConversation ? (
           <NoChatSelected />
         ) : (
           <>
-            <MessageHeader />
+            <MessageHeader selectedConversation={selectedConversation} />
             <Messages />
             <div className="mt-auto">
               <MessageInput />

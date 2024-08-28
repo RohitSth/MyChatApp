@@ -1,11 +1,12 @@
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
-const MessageHeader = () => {
+const MessageHeader = ({ selectedConversation }) => {
   return (
     <div className="bg-white/20 pl-2 pr-1 py-1 mb-2 rounded-full flex justify-between items-center">
       <div>
-        <span className="text-gray-900 flex items-center text-white gap-x-2 font-semibold text-sm">
-          <IoChatbubbleEllipsesOutline size="16" /> Ram Kumar
+        <span className="flex items-center text-white gap-x-2 font-semibold text-sm">
+          <IoChatbubbleEllipsesOutline size="16" />{" "}
+          {selectedConversation.fullName}
         </span>
       </div>
       <div className="avatar">
